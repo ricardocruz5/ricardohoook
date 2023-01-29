@@ -1,4 +1,8 @@
---taken from bae module xd
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
 local GUI = Instance.new("ScreenGui")
 local ListTemplate = Instance.new("Frame")
 local ScrollingFrame = Instance.new("ScrollingFrame")
@@ -14,8 +18,7 @@ local Clipper = Instance.new("Frame")
 local Title_2 = Instance.new("TextLabel")
 local Console = Instance.new("Frame")
 local List = Instance.new("TextBox")
-local MouseLabel = Instance.new("Frame")
-local Label = Instance.new("TextLabel")
+local MouseLabel = Instance.new("TextLabel")
 GUI.Name = "GUI"
 GUI.Parent = game.CoreGui
 ListTemplate.Name = "List Template"
@@ -181,28 +184,19 @@ List.TextXAlignment = Enum.TextXAlignment.Left
 
 MouseLabel.Name = "Mouse Label"
 MouseLabel.Parent = GUI
-MouseLabel.AnchorPoint = Vector2.new(0, 1)
 MouseLabel.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
 MouseLabel.BackgroundTransparency = 0.250
 MouseLabel.BorderColor3 = Color3.fromRGB(50, 50, 50)
-MouseLabel.Position = UDim2.new(0.5, -39, 0.5, -15)
-MouseLabel.Size = UDim2.new(0, 327, 0, 30)
+MouseLabel.Position = UDim2.new(0.496828765, 0, 0.504326344, 0)
+MouseLabel.Size = UDim2.new(0, 268, 0, 45)
 MouseLabel.Visible = false
-MouseLabel.ZIndex = 11
-
-Label.Name = "Label"
-Label.Parent = MouseLabel
-Label.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Label.BackgroundTransparency = 1.000
-Label.BorderSizePixel = 0
-Label.Size = UDim2.new(1, 0, 1, 0)
-Label.ZIndex = 12
-Label.Font = Enum.Font.SourceSans
-Label.Text = "fojgnsouhnjsofgh"
-Label.TextColor3 = Color3.fromRGB(255, 255, 255)
-Label.TextSize = 18.000
-Label.TextXAlignment = Enum.TextXAlignment.Left
-
+MouseLabel.ZIndex = 12
+MouseLabel.Font = Enum.Font.SourceSans
+MouseLabel.Text = ""
+MouseLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+MouseLabel.TextSize = 18.000
+MouseLabel.TextXAlignment = Enum.TextXAlignment.Left
+MouseLabel.TextYAlignment = Enum.TextYAlignment.Top
 local Table = {}
 
 for I, V in pairs(GUI:GetDescendants()) do

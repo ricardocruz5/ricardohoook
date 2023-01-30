@@ -1,7 +1,4 @@
--- Gui to Lua
--- Version: 3.2
-
--- Instances:
+--Umm stop looking in Ricarodohook, this is private use!!!1`1
 
 local GUI = Instance.new("ScreenGui")
 local ListTemplate = Instance.new("Frame")

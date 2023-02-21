@@ -6,15 +6,17 @@
 	https://devforum.roblox.com/t/simple-module-for-creating-draggable-gui-elements/230678
 --]]
 
-local UDim2_new = UDim2.new
 
-local UserInputService = game:GetService("UserInputService")
+
+
 
 local DraggableObject 		= {}
 DraggableObject.__index 	= DraggableObject
 
 -- Sets up a new draggable object
 function DraggableObject.new(Object)
+	local UserInputService = game:GetService("UserInputService")
+	local UDim2_new = UDim2.new
 	local self 			= {}
 	self.Object			= Object
 	self.DragStarted	= nil
@@ -29,6 +31,8 @@ end
 
 -- Enables dragging
 function DraggableObject:Enable()
+	local UserInputService = game:GetService("UserInputService")
+	local UDim2_new = UDim2.new
 	local object			= self.Object
 	local dragInput			= nil
 	local dragStart			= nil
